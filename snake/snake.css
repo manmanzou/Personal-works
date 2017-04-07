@@ -1,0 +1,10 @@
+﻿.main{height:600px;width:600px;margin:0 auto;border:5px #565656 solid;position:relative}
+#shade,#trompt{height:600px;width:600px;top:0;left:0;position:absolute;box-sizing:border-box;}
+#shade{background:rgba(51,254,0,0.6);padding-top:350px;}
+#trompt{background:rgba(255,255,255,0.6);padding-top:200px;display:none;text-align:center;}
+#mes{font-variant:small-caps;}
+.w1200{width:1200px;min-width:1200px;margin:0 auto;}
+img{width:100%;}
+button{width:100px;height:30px;cursor:pointer;}
+.part{text-align:center;}
+.tips{width:400px;text-align:center;color:#333;margin:0 auto;font-size:13px;position:relative;Z-index:10;}
