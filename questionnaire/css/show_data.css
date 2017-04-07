@@ -1,0 +1,12 @@
+﻿.show_item{
+	width:40rem;
+	height:24rem;
+	box-shadow:1px 1px 2px #BBBBBB;
+	background-color:#fff!important;
+	margin-bottom:1rem;
+	padding:0.5rem;
+}
+.show_data{
+	width:40rem;
+	margin:3rem auto;
+}

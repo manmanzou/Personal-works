@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-hans">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="./css/public.css"/>
+		<link rel="stylesheet" href="./css/index.css"/>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	</head>
+	<body>
+		<header>
+			<h2>微型问卷调查平台</h2><span>我的问卷</span>
+		</header>
+		<button id="newques" v-on:click="creat">新建问卷</button>
+		<section class="section_1" id="section_1">
+			<div
+				is="ques_show"
+				v-for="(item,index) in data"
+				:title = "item.title"
+				:data = "item.data"
+				:state = "item.state"
+				:edit = "edit"
+				:remove = "remove"
+				:index = "index"
+				:edit_write = "edit_write"
+				:showdata = "showdata"
+			></div>
+			<div>
+				<input type="checkbox" name="quanxuan" id="all"  @click="set_checked($event)"><label for="all">全选</label><button @click="remove_batch($event)">批量删除</button>
+			</div>
+		</section>		
+		<script src="./js/database.js"></script>
+		<script src="./js/index.js"></script>		
+	</body>
+</html>

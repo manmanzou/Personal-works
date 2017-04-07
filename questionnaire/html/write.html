@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-hans">
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="../css/public.css"/>
+		<link rel="stylesheet" href="../css/write.css"/>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	</head>
+	<body >
+	<header>
+		<h2>微型问卷调查平台</h2>
+	</header>
+	<section id="section_1">
+	<h1>{{name}}</h1>
+		<question_item
+			v-for="(item,index) in question"
+			:title="item.title"
+			:index="index"
+			:category="item.category"
+			:text="item.text"
+			:diedai="item.item"
+			:tag="item.tag"
+		></question_item>
+	<div class="submit"><button id="submit" @click="skip">提交</button></div>
+	</section>
+		<script src="../js/database.js"></script>	
+		<script src="../js/write.js"></script>	
+	</body>
+</html>

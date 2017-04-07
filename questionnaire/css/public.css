@@ -1,0 +1,42 @@
+﻿*{margin:0;padding:0;}
+body,button,input{font:1rem/1.5 'Microsoft YaHei',"Helvetica Neue",Helvetica,Arial,sans-serif,'Hiragino Sans GB',tahoma,arial,sans-serif}  
+button,input{font-size:100%}  
+ol,ul{list-style:none}  
+a{text-decoration:none}  
+a:hover{text-decoration:underline}  
+header{
+	width:auto;
+	height:3rem;
+	background-color:#337AB7;
+}
+h2{
+	display:inline-block;
+	margin-left:3rem;
+	color:#fff;
+	line-height:3rem;
+}
+header span{
+	color:#fff;
+	margin-left:1rem;
+	font-weight:600;
+	display:inline-block;
+	line-height:3rem;
+}
+body{
+	background-color:#efefef;
+}
+button{
+	height:2rem;
+	width:4rem;
+	font-size:0.75rem;
+	border:1px solid #777777;
+	border-radius:3px;
+	outline:none;
+	background-color:#fff;
+	margin:0 0.1rem;
+	cursor:pointer;
+}
+button:hover {
+	box-shadow:1px 1px 1px  #337AB7,-1px -1px 1px  #337AB7;
+
+}

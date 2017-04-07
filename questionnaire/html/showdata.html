@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cmn-hans">
+	<head>
+		<title>查看数据</title>
+		<link rel="stylesheet" href="../css/public.css"/>
+		<link rel="stylesheet" href="../css/show_data.css"/>
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	</head>
+	<body >
+		<header>
+			<h2>微型问卷调查平台</h2><span>查看数据</span>
+		</header>		
+		<div class="show_data" id="show_data">
+			<show_data
+				v-for="item in question"
+			></show_data>
+		</div>
+		<script src='../js/echarts.min.js'></script>
+		<script src="../js/database.js"></script>	
+		<script src="../js/showdata.js"></script>	
+
+	</body>
+</html>
